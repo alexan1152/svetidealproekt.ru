@@ -7,3 +7,20 @@
 body {
 background-color: #fff;
 }
+
+#main-burger-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 250px;
+}
+
+#main-burger-menu li {
+    background-color: #C4C4C4;
+    height: 38px;
+    border-bottom: 1px solid #fff;
+}
+
+#main-burger-menu a {
+    color: #000;
+}
