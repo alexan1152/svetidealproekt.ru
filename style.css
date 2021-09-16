@@ -6,21 +6,62 @@
  */
 body {
 background-color: #fff;
+    height: 5000px;
 }
 
 #main-burger-menu {
+    width: 250px;
+    position: relative;
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    width: 250px;
+    list-style: none;
 }
 
-#main-burger-menu li {
-    background-color: #C4C4C4;
-    height: 38px;
-    border-bottom: 1px solid #fff;
+#main-burger-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#main-burger-menu ul {
+    display: none;
 }
 
 #main-burger-menu a {
+    display: block;
+    float: left;
+    width: 200px;
+    padding: 11px 30px;
     color: #000;
+    text-transform: uppercase; /* заглавные буквы */
+    font: bold 11px Arial, Helvetica;
+    text-decoration: none; /* убираем подчеркивание ссылок по умолчанию */
+    /*    text-shadow: 0 1px 0 #000;  тень */
+    background-color: #C4C4C4;
+    border-bottom: 1px solid #fff;
+}
+
+#main-burger-menu li:hover ul {
+    display: block; /* при наведении вложенные блоки отображаются */
+
+}
+
+#main-burger-menu li:hover a {
+    color: #FFF;
+    background-color: #98C858;
+}
+
+#main-burger-menu li:hover ul li a.li-white{
+    color: #000;
+    background-color: #fff;
+}
+
+#main-burger-menu li:hover ul li a.li-gray{
+    color: #000;
+    background-color: #C4C4C4;
+}
+
+#main-burger-menu li:hover ul li ul li a{
+    padding-left: 40px;
+    padding-right: 20px;
 }
